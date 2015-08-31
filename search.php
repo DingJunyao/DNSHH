@@ -4,7 +4,7 @@
   if(strpos($_SERVER["PHP_SELF"],"themes")) header('Location:/');
   $this->need('header.php'); ?>
 <?php if ($this->have()): ?>
-<div class="alert alert-info"><h4><?php $this->archiveTitle(' &lt; ','',''); ?></h4></div>
+<div class="alert alert-info"><h4>“<?php $this->archiveTitle(' &lt; ','',''); ?>” 的搜索结果</h4></div>
 <div id="content">
  <?php $this->need('index_list.php'); ?>
 </div>
@@ -13,6 +13,5 @@
           <small>请更换关键词重新搜索</small></blockquote>
 <img style="display:block;margin:0 auto 0 auto" src="<?php $this->options->themeUrl(); ?>img/404.gif" />
       <?php endif; ?>
-
 <?php $this->need('footer.php'); ?>
 <?php }?>
