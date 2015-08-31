@@ -15,8 +15,8 @@
 	box-shadow:0px 2px 5px rgba(0,0,0,0.15);
 	padding:30px;
 }
-li {
-	list-style:none;
+.post ol,.post ul{
+	padding-left:26px;
 }
 #Center {
 	padding:24px 0px 0px 0px;
@@ -171,6 +171,7 @@ ol.page-navigator a {
 	line-height:29px;
 	height:29px;
 	margin:0;
+	padding:0;
 }
 .share2 ul li ul.children {
 	top:30px;
@@ -663,4 +664,13 @@ a:hover {
 .nothumb {
 	color:#555;
 	margin-left: 10px;
+}
+/*The bellow is added by Ding Junyao for print style*/
+@media print {
+body{background:none;}
+#Main{width:100%;}
+#Center,#sidebar,.comment-box,.share2{display:none;}
+#content a:after,.post a:after {
+      content:" <" attr(href) "> ";
+   }
 }
