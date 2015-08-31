@@ -51,7 +51,7 @@
             <?php endwhile; ?>
 <?php } ?>
 				<li><a href="<?php $this->options->feedUrl(); ?>" class="menu-rss" target="_blank">订阅</a></li>
-<form  style="display:inline;" class="form-search" action="/search" method="get" >
+<form  style="display:inline;" class="form-search" action="search" method="get" >
     <input  style="height:13px;width:120px;display:inline;color:#999;float:right" type="text" class="input-medium search-query"  name="s" value="回车以搜索..." onfocus="if (value =='回车以搜索...'){value =''}" onblur="if (value ==''){value='回车以搜索...'}" lang="zh-CN" >
     </form>
 </ul><div id="bottom-bar"></div>
