@@ -19,43 +19,8 @@ if(isset($_GET["action"]) && $_GET["action"] == "ajax_comments"){// Ajax请求�
 	<div class="share2">
 		<ul class="drop-menu">
 <!-- Baidu Button BEGIN -->
-    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-        <a class="bds_qzone"></a>
-        <a class="bds_tsina"></a>
-        <a class="bds_tqq"></a>
-        <a class="bds_renren"></a>
-        <a class="bds_kaixin001"></a>
-        <a class="bds_tqf"></a>
-        <a class="bds_douban"></a>
-        <a class="bds_tsohu"></a>
-        <a class="bds_taobao"></a>
-        <a class="bds_sohu"></a>
-        <a class="bds_t163"></a>
-        <a class="bds_tfh"></a>
-        <a class="bds_hx"></a>
-        <a class="bds_ff"></a>
-        <a class="bds_xg"></a>
-        <a class="bds_ty"></a>
-        <a class="bds_hi"></a>
-        <a class="bds_msn"></a>
-        <a class="bds_deli"></a>
-        <a class="bds_fbook"></a>
-<a class="bds_mshare"></a>
-<a class="bds_bdhome"></a>
-<a class="bds_tieba"></a>
-<a class="bds_diandian"></a>
-<a class="bds_huaban"></a>
-<a class="bds_youdao"></a>
-<a class="bds_mail"></a>
-        <a class="bds_copy"></a>
-        <span class="bds_more"></span>
-		<a class="shareCount"></a>
-    </div>
-<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=<?php $this->options->shareid() ?>" ></script>
-<script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
-</script>
+    <div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" style="margin-left: 6px;" title="分享到QQ空间"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a><a href="#" class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_hx" data-cmd="hx" title="分享到和讯"></a><a href="#" class="bds_tsohu" data-cmd="tsohu" title="分享到搜狐微博"></a><a href="#" class="bds_isohu" data-cmd="isohu" title="分享到我的搜狐"></a><a href="#" class="bds_ty" data-cmd="ty" title="分享到天涯社区"></a><a href="#" class="bds_diandian" data-cmd="diandian" title="分享到点点网"></a><a href="#" class="bds_huaban" data-cmd="huaban" title="分享到花瓣"></a><a href="#" class="bds_duitang" data-cmd="duitang" title="分享到堆糖"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a><a href="#" class="bds_sdo" data-cmd="sdo" title="分享到麦库记事"></a><a href="#" class="bds_qingbiji" data-cmd="qingbiji" title="分享到轻笔记"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_more" data-cmd="more"></a><a class="bds_count" data-cmd="count"></a> </div>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=<?php $this->options->shareid() ?>.js?cdnversion='+~(-new Date()/36e5)];</script>
 <!-- Baidu Button END -->
 		</li>
 		</ul>
