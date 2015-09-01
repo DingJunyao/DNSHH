@@ -15,12 +15,6 @@
  <script src="<?php $this->options->themeUrl(); ?>js/bootstrap.js"></script>
  <script src="<?php $this->options->themeUrl(); ?>js/bootstrap-alert.js"></script>
 <script type="text/javascript">
-$(function () {
-$('.post img').hover(
-function() {$(this).fadeTo("fast", 0.5);},
-function() {$(this).fadeTo("fast", 1.1);
-});
-});
 $(document).ready(function() {
 $(".post p:has(img)").css("text-indent","0");
 });
